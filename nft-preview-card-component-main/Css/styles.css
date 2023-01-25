@@ -36,23 +36,24 @@ body {
 }
 
 .main-section {
-    width: 26rem;
-    background-color: rgba(18, 18, 18, 0.07);
+    width: 25rem;
+    background-color: rgba(18, 18, 18, 0.04);
     border-radius: 1rem;
     padding: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: .5rem;
 }
+
 .container {
     width: 20rem;
     padding: 1.65rem;
     background-color: var(--card_BG);
-    border-radius: .7rem;
-    box-shadow: .4rem 2rem 1px 1.2rem rgba(0, 0, 0, .05);
+    border-radius: .8rem;
+    box-shadow: .4rem 1rem 1px .9rem rgba(0, 0, 0, .04);
 }
 
 .image-wrapper{
