@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+   /* Colors */
+
+:root {
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Montserrat",Fraunces;
+    font-size: 14px;
+    color: var(--Dark_grayish_blue);
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 34rem;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: var(--White);
+    border-radius: .5rem;
+}
+
+.image-wrapper {
+    flex: 1;
+    background: url("../images/image-product-desktop.jpg") center no-repeat;
+    background-size: cover;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.text-wrapper{
+    flex: 1;
+    padding: 1rem 2rem;
+}
+
+.text-wrapper .perfume-text{
+    letter-spacing: .2rem; 
+    margin: 1rem 0;   
+}
+
+.text-wrapper h1 {
+    font-family: "Fraunces";
+    font-size: 2.rem;
+    color: var(--Very_dark_blue);
+    line-height: 1.08;
+    margin-bottom: 1.4rem;
+}
+
+.text-wrapper .description-text {
+    font-size: .8rem;
+    line-height: 1.7;
+    margin-bottom: 1.3rem;
+}
+
+.text-wrapper .price-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.text-wrapper .price-wrapper h2 {
+    color: var(--Dark_cyan);
+    font-size: 1.6rem;
+    font-family: "Fraunces";
+    margin-right: 1rem;
+}
+
+.text-wrapper .price-wrapper p {
+    text-decoration: line-through;
+}
+
+.text-wrapper button {
+    width: 100%;
+    margin: 1.4rem 0;
+    background-color: var(--Dark_cyan);
+    color: var(--White);
+    border: none;
+    padding: .85rem 0;
+    border-radius: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.text-wrapper button img {
+    display: inline;
+    width: .75rem;
+    margin-right: .4rem;
+}
+
+.text-wrapper button:hover{
+    background-color: hsl(158, 71%, 15%);
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+@media screen and (max-width: 600px){
+    .container {
+        width: 20rem;
+        height: 38rem;
+        flex-flow: column;
+    }
+    .image-wrapper {
+        background: url("../images/image-product-mobile.jpg") center no-repeat;
+        background-size: cover;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: .5rem;
+    }
+
+    .text-wrapper{
+        padding: 1rem 1.8rem;
+    }
+
+}
