@@ -49,19 +49,19 @@ body {
 }
 
 .container {
-    width: 20rem;
-    padding: 1.65rem;
+    width: 20.8rem;
+    padding: 1.65rem 1.8rem;
     background-color: var(--card_BG);
     border-radius: .8rem;
     box-shadow: .4rem 1rem 1px .9rem rgba(0, 0, 0, .04);
 }
 
 .image-wrapper{
-    width: 17rem;
-    height: 17rem;
+    width: 17.5rem;
+    height: 18rem;
     background: url("../images/image-equilibrium.jpg") center no-repeat;
     background-size: 100%;
-    border-radius: .35rem;
+    border-radius: .68rem;
     margin-bottom: .5rem;
 }
 
@@ -79,10 +79,10 @@ body {
     display: none;
 }
 
-.text-wrapper h2 {
+.text-wrapper h1 {
     color: var(--White);
     font-size: 1.2rem;
-    margin: 1.2rem 0;
+    margin: 1.4rem 0;
 }
 
 .text-wrapper h2:hover {
