@@ -81,17 +81,17 @@ body {
 
 .text-wrapper h1 {
     color: var(--White);
-    font-size: 1.2rem;
+    font-size: 1.32rem;
     margin: 1.4rem 0;
 }
 
-.text-wrapper h1:hover {
+.text-wrapper h2:hover {
     color: var(--Cyan);
 }
 
 .text-wrapper p {
     color: var(--Soft);
-    font-size: 1rem;
+    font-size: 1.05rem;
     margin: .2rem 0;
 }
 
