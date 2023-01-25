@@ -85,7 +85,7 @@ body {
     margin: 1.4rem 0;
 }
 
-.text-wrapper h2:hover {
+.text-wrapper h1:hover {
     color: var(--Cyan);
 }
 
