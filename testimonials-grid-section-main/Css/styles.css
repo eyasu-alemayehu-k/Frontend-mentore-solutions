@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Moderate_violet: hsl(263, 55%, 52%);
+    --Very_dark_grayish_blue: hsl(217, 19%, 35%);
+    --Very_dark_blackish_blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(0, 0%, 81%);
+    --Light_grayish_blue: hsl(210, 46%, 95%);
+    --Verified_Graduate: hsla(210, 46%, 95%, 0.5);
+    --paragraphs_inside_quotations: hsla(210, 46%, 95%, 0.7);
+    --Verified_Graduate_dark: hsla(217, 19%, 35%, 0.5);
+    --paragraphs_inside_quotations_dark: hsla(217, 19%, 35%, 0.7);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed";
+    background-color: var(--Light_grayish_blue);
+}
+
+main {
+    padding: 3rem;
+    max-width: 90rem;
+    min-width: 10rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    "t-one"
+    "t-two"
+    "t-three"
+    "t-four"
+    "t-five";
+}
+
+.testimonials {
+    padding: 2rem 3.5rem;
+    border-radius: .5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217,19%, 35%, .23);
+}
+
+.testimonials .head-wrapper {
+    display: flex;
+}
+
+.testimonials .head-wrapper img {
+    width: 2.6rem;
+    border-radius: 50%;
+    padding: .1rem;
+    margin-right: 1rem;
+}
+
+.testimonials:nth-child(1) img{
+    background-color: hsl(0, 0%, 100%, .4);
+}
+
+.testimonials:nth-child(4) img{
+    background-color: hsl(263, 55%, 52%, .4);
+}
+.testimonials h2 {
+    color: var(--Light_grayish_blue);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.testimonials h3 {
+    color: var(--Verified_Graduate);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.testimonials h4 {
+    color: var(--White);
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.testimonials p {
+    font-size: 1.1rem;
+    color: var(--paragraphs_inside_quotations);
+}
+
+.testimonials .dark-h2 {
+    color: var(--Very_dark_grayish_blue);
+}
+.testimonials .dark-h3 {
+    color: var(--Verified_Graduate_dark);
+}
+.testimonials .dark-h4 {
+    color: var(--Very_dark_grayish_blue);
+}
+.testimonials .dark-p {
+    color: var(--paragraphs_inside_quotations_dark);
+}
+
+
+.testimonials:nth-child(1) {
+    background: url("../images/bg-pattern-quotation.svg") right 2rem top no-repeat;
+    background-size: auto 35%;
+    background-color: var(--Moderate_violet);
+    grid-area: t-one;
+}
+
+.testimonials:nth-child(2) {
+    background-color: var(--Very_dark_grayish_blue);
+    grid-area: t-two;
+}
+
+.testimonials:nth-child(3) {
+    background-color: var(--White);
+    grid-area: t-three;
+}
+
+.testimonials:nth-child(4) {
+    background-color: var(--Very_dark_blackish_blue);
+    grid-area: t-four;
+}
+
+.testimonials:nth-child(5) {
+    background-color: var(--White);
+    grid-area: t-five;
+}
+
+@media screen and (min-width : 1000px){
+
+    main {
+        grid-template-areas: 
+        "t-one t-one t-two"
+        "t-three t-four t-four"
+        "t-five t-five t-five";
+    }
+    
+    .testimonials h4 {
+        font-size: 1.5rem;
+    }
+    
+    .testimonials p {
+       font-size: 1.1rem;
+    }
+    .testimonials:nth-child(1) {
+        background-position: right 5rem top;
+    }
+    
+}
+
+@media screen and (min-width : 1340px){
+
+    main {
+        grid-template-areas: 
+        "t-one t-one t-two t-five"
+        "t-three t-four t-four t-five";
+    }
+    .testimonials {
+        padding: 2rem 2rem;
+    }
+    
+}
