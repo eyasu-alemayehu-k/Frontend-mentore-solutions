@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    --White: hsl(0, 0%, 100%);
+    --Transparent_white: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray: hsl(0, 0%, 95%);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: "Lexend Deca","Big Shoulders Display",sans-serif;
+    background-color: var(--Very_light_gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    grid-template-rows: auto;
+}
+
+.card {
+    padding: 3rem;
+    height: 32rem;
+    display : flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.card:nth-child(1) {
+    background-color: var(--Bright_orange);
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+}
+.card:nth-child(2) {
+    background-color: var(--Dark_cyan);
+
+}
+.card:nth-child(3) {
+    background-color: var(--Very_dark_cyan);
+    border-top-right-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+}
+
+.text-area h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+    color: var(--Very_light_gray);
+    margin: 2rem 0;;
+}
+
+.text-area p {
+    color: var(--Transparent_white);
+    line-height: 1.8;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+
+.button-area button {
+    border: 0;
+    padding: .8rem 2.4rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: var(--Very_light_gray);
+}
+
+.card:nth-child(1) button {
+    color: var(--Bright_orange);
+}
+
+.card:nth-child(2) button {
+    color: var(--Dark_cyan);
+}
+
+.card:nth-child(3) button {
+    color: var(--Very_dark_cyan);
+}
+
+@media (max-width : 540px) {
+    main {
+        grid-template-columns: repeat(1, 20rem);
+        margin: 2rem 0;
+    }
+
+    .card {
+        padding: 2.5rem;
+        justify-content: space-evenly;
+    }
+
+    .text-area p {
+        font-size: 1rem;
+    }
+
+    .card:nth-child(1) {
+        border-radius: unset;
+        border-top-left-radius: .4rem;
+        border-top-right-radius: .4rem;
+    }
+    .card:nth-child(3) {
+        border-radius: unset;
+        border-bottom-right-radius: .4rem;
+        border-bottom-left-radius: .4rem;
+    }
+}
