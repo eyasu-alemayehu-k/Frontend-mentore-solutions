@@ -145,38 +145,31 @@ main {
 
     main {
         padding : 2rem;
-        grid-template-areas:
-        "t-one"
-        "t-two"
-        "t-three"
-        "t-four"
-        "t-five";
     }
 
     .testimonials {
         padding: 2rem 3rem;
     }
     
-    .testimonials h4 {
-        font-size: 1.5rem;
-    }
-    
-    .testimonials p {
-       font-size: 1.1rem;
-    }
     .testimonials:nth-child(1) {
         background-position: right 5rem top;
     }
     
 }
-@media (min-width : 770px) and (max-width : 1100px){
+
+@media (min-width : 770px) and (max-width : 965px){
 
     main {
         margin : 2.5rem;
         grid-template-areas: 
-        "t-one t-one t-two"
-        "t-three t-four t-four"
-        "t-five t-five t-five";
+        "t-one t-one"
+        "t-two t-three "
+        "t-four t-four"
+        "t-five t-five";
+    }
+
+    .testimonials {
+        padding: 2rem 3rem;
     }
     
     .testimonials h4 {
@@ -193,7 +186,35 @@ main {
     
 }
 
-@media (min-width : 1101px){
+@media (min-width : 965px) and (max-width : 1200px){
+
+    main {
+        margin : 2.5rem;
+        grid-template-areas: 
+        "t-one t-one t-two"
+        "t-three t-four t-four"
+        "t-five t-five t-five";
+    }
+
+    .testimonials {
+        padding: 2rem 3rem;
+    }
+    
+    .testimonials h4 {
+        font-size: 1.4rem;
+    }
+    
+    .testimonials p {
+       font-size: 1.1rem;
+    }
+    .testimonials:nth-child(1) {
+        background-position: right 5rem top;
+        background-size: auto 25%;
+    }
+    
+}
+
+@media (min-width : 1201px){
 
     main {
         margin: 2rem;
@@ -202,7 +223,7 @@ main {
         "t-three t-four t-four t-five";
     }
     .testimonials {
-        padding: 2.5rem 2.5rem;
+        padding: 2rem 2.5rem;
     }
 
     .testimonials h4 {
@@ -214,7 +235,7 @@ main {
     }
     .testimonials:nth-child(1) {
         background-position: right 5rem top;
-        background-size: auto 30%;
+        background-size: auto 40%;
     }
     
 }
