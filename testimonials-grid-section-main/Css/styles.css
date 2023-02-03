@@ -28,14 +28,13 @@ body {
     place-content: center;
     min-height: 100vh;
     font-size: 13px;
-    font-family: "Barlow Semi Condensed";
+    font-family: "Barlow Semi Condensed", sans-serif;
     background-color: var(--Light_grayish_blue);
 }
 
 main {
-    padding: 3rem;
-    max-width: 90rem;
-    min-width: 10rem;
+    padding: 1rem;
+    max-width: 80rem;
     display: grid;
     gap: 1.5rem;
     grid-auto-columns: 1fr;
@@ -48,9 +47,16 @@ main {
 }
 
 .testimonials {
-    padding: 2rem 3.5rem;
+    padding: 2rem 1.5rem;
     border-radius: .5rem;
     box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217,19%, 35%, .23);
+    transition: all .5s ease-in;
+}
+
+.testimonials:hover {
+    cursor: pointer;
+    box-shadow: 1rem 1rem 1rem -.5rem rgba(10, 225, 240, 0.719);
+    transition: all 1s ease-in-out;
 }
 
 .testimonials .head-wrapper {
@@ -111,7 +117,6 @@ main {
 
 .testimonials:nth-child(1) {
     background: url("../images/bg-pattern-quotation.svg") right 2rem top no-repeat;
-    background-size: auto 35%;
     background-color: var(--Moderate_violet);
     grid-area: t-one;
 }
@@ -136,13 +141,20 @@ main {
     grid-area: t-five;
 }
 
-@media screen and (min-width : 1000px){
+@media (min-width : 541px) and (max-width : 770px){
 
     main {
-        grid-template-areas: 
-        "t-one t-one t-two"
-        "t-three t-four t-four"
-        "t-five t-five t-five";
+        padding : 2rem;
+        grid-template-areas:
+        "t-one"
+        "t-two"
+        "t-three"
+        "t-four"
+        "t-five";
+    }
+
+    .testimonials {
+        padding: 2rem 3rem;
     }
     
     .testimonials h4 {
@@ -157,16 +169,52 @@ main {
     }
     
 }
-
-@media screen and (min-width : 1340px){
+@media (min-width : 770px) and (max-width : 1100px){
 
     main {
+        margin : 2.5rem;
+        grid-template-areas: 
+        "t-one t-one t-two"
+        "t-three t-four t-four"
+        "t-five t-five t-five";
+    }
+    
+    .testimonials h4 {
+        font-size: 1.4rem;
+    }
+    
+    .testimonials p {
+       font-size: 1.1rem;
+    }
+    .testimonials:nth-child(1) {
+        background-position: right 5rem top;
+        background-size: auto 30%;
+    }
+    
+}
+
+@media (min-width : 1101px){
+
+    main {
+        margin: 2rem;
         grid-template-areas: 
         "t-one t-one t-two t-five"
         "t-three t-four t-four t-five";
     }
     .testimonials {
-        padding: 2rem 2rem;
+        padding: 2.5rem 2.5rem;
+    }
+
+    .testimonials h4 {
+        font-size: 1.4rem;
+    }
+    
+    .testimonials p {
+       font-size: .9rem;
+    }
+    .testimonials:nth-child(1) {
+        background-position: right 5rem top;
+        background-size: auto 30%;
     }
     
 }
