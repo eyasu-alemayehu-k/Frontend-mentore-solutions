@@ -38,7 +38,6 @@ main {
   overflow: hidden;
 }
 
-
 .box {
   padding: 1rem;
 }
@@ -59,7 +58,7 @@ main {
 }
 .box-one h1 {
   color: var(--Cyan);
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.5rem;
 }
 
 .box-one h3 {
@@ -72,7 +71,7 @@ main {
 }
 
 .box-one p {
-    line-height: 1.8;
+  line-height: 1.8;
   color: var(--GrayishBlue);
 }
 .box-price {
@@ -98,7 +97,7 @@ main {
   text-align: center;
   margin-top: 1.6rem;
   box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.16);
-  margin-bottom: .36rem;
+  margin-bottom: 0.56rem;
 }
 
 @media screen and (min-width: 820px) {
