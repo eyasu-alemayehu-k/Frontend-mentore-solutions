@@ -38,10 +38,6 @@ main {
   overflow: hidden;
 }
 
-.container {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-}
 
 .box {
   padding: 1rem;
@@ -59,10 +55,10 @@ main {
 .box h2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .box-one h1 {
   color: var(--Cyan);
-  margin-top: 1rem;
   margin-bottom: 1.7rem;
 }
 
@@ -102,10 +98,12 @@ main {
   text-align: center;
   margin-top: 1.6rem;
   box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.16);
+  margin-bottom: .36rem;
 }
 
 @media screen and (min-width: 820px) {
   .container {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .box:nth-child(1) {
