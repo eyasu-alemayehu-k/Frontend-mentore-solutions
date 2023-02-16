@@ -27,7 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--White);
-  margin: 2rem;
+  margin: 0 2rem;
 }
 
 main {
@@ -36,6 +36,11 @@ main {
   background-color: var(--White);
   border-radius: 0.4rem;
   overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .box {
@@ -48,7 +53,7 @@ main {
 
 .box:nth-child(3) {
   background-color: var(--Cyan);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .box h2 {
@@ -57,10 +62,11 @@ main {
 }
 .box-one h1 {
   color: var(--Cyan);
-  margin-bottom: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1.7rem;
 }
 
-.box-one h4 {
+.box-one h3 {
   color: var(--BrightYellow);
   margin-bottom: 1rem;
 }
@@ -70,6 +76,7 @@ main {
 }
 
 .box-one p {
+    line-height: 1.8;
   color: var(--GrayishBlue);
 }
 .box-price {
@@ -99,7 +106,6 @@ main {
 
 @media screen and (min-width: 820px) {
   .container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .box:nth-child(1) {
