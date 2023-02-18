@@ -1,0 +1,183 @@
+*,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* @font-face {
+  font-family: "Plus Jakarta Sans";
+  font-size: 500;
+  src: url(assets/fonts/static/PlusJakartaSans-Medium.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-size: 800;
+  src: url(assets/fonts/static/PlusJakartaSans-ExtraBold.ttf) format("ttf");
+} */
+
+:root {
+  --red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very_light_grayish_blue: hsl(210, 60%, 98%);
+  --Light_grayish_blu_1: hsl(211, 68%, 94%);
+  --Light_grayish_blue_2: hsl(205, 33%, 90%);
+  --Grayish_blue: hsl(219, 14%, 63%);
+  --Dark_grayish_blue: hsl(219, 12%, 42%);
+  --Very_dark_blue: hsl(224, 21%, 14%);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans";
+  display: flex;
+  background-color: var(--Very_light_grayish_blue);
+}
+
+main {
+    min-width: 375px;
+    max-width: 650px;
+    margin: auto;
+    display: grid;
+    gap: .4rem;
+    background-color: var(--White);
+    border-radius: .6rem;
+    padding: 1.5rem .8rem;
+    overflow: hidden;
+}
+
+article {
+    padding:.4rem;
+}
+
+span, p {
+    font-size: .5rem;
+}
+
+.bg-blue {
+    background-color:  var(--Very_light_grayish_blue);
+    border-radius: .3rem;
+}
+
+.cl-blue {
+    color: var(--Blue);
+    font-weight: 800;
+}
+
+.right-side {
+    margin-left: 1rem;
+}
+.notifications, .side {
+    display: flex;
+}
+
+.side {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h1{
+    color: var(--Very_dark_blue);
+    font-weight: 800;
+    font-size: .75rem;
+}
+
+.title h1::after {
+    content: '3';
+    font-size: .5rem;
+    background-color: var(--Blue);
+    color: var(--White);
+    padding: .15rem .4rem;
+    border-radius: .2rem;
+    margin-left: .3rem;
+    position: absolute;
+}
+
+.title p {
+    font-size: .5rem;
+    color: var(--Dark_grayish_blue);
+}
+
+.notifications img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+
+.notifications .post-text .name {
+    color: var(--Very_dark_blue);
+    font-weight: 800;
+}
+
+.notifications .post-text .info {
+    color: var(--Dark_grayish_blue);
+}
+
+.notifications .post-text .info .dark {
+    font-weight: 800;
+}
+
+.notifications .post-text .date {
+    color: var(--Grayish_blue);
+}
+
+.notifications .post-text .message {
+    font-size: .45rem;
+    color: var(--Dark_grayish_blue);
+    border: 1px solid var(--Light_grayish_blu_1);
+    padding: .4rem;
+    border-radius: .2rem;
+    margin-top: .3rem;
+}
+
+.notifications .post-text .message:hover {
+    background-color: var(--Light_grayish_blu_1);
+    cursor: pointer;
+}
+
+.red-dot::after {
+    content: '';
+    background-color: var(--red);
+    font-size: 2rem;
+    font-weight: normal;
+    width: .3rem;
+    height: .3rem;
+    border-radius: 50%;
+    position: absolute;
+    margin-top:  .25rem;
+    margin-left: .2rem;  
+} 
+
+.right-side img:hover {
+    background-color: var(--Light_grayish_blu_1);
+    padding: .1rem;
+    cursor: pointer;
+}
+.title p:hover,
+.cl-blue:hover,
+.notifications .post-text .info .dark:hover,
+.notifications .post-text .name:hover{
+    color: var(--Blue);
+    cursor: pointer;
+}
